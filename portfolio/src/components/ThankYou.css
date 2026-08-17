@@ -1,0 +1,40 @@
+.thanks {
+  position: relative;
+  background: var(--cream);
+}
+
+.thanks__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.thanks__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 18px 16px 26px;
+  background: var(--chalk-green-dark);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(242, 236, 224, 0.75);
+}
+
+.thanks__link {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(242, 236, 224, 0.35);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.thanks__link:hover {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.thanks__dot {
+  opacity: 0.5;
+}

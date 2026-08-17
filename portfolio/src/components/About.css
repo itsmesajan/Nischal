@@ -1,0 +1,43 @@
+.about {
+  position: relative;
+  background: #ffffff;
+}
+
+.about__frame {
+  position: relative;
+}
+
+.about__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about__qr-hotspot {
+  position: absolute;
+  left: 4.5%;
+  top: 12%;
+  width: 21%;
+  height: 41%;
+  border-radius: 6%;
+  cursor: pointer;
+  outline: none;
+}
+
+.about__qr-ring {
+  position: absolute;
+  inset: -6%;
+  border-radius: 10%;
+  box-shadow: 0 0 0 0 rgba(60, 135, 6, 0);
+  transition: box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.about__qr-hotspot:hover .about__qr-ring,
+.about__qr-hotspot:focus-visible .about__qr-ring {
+  box-shadow: 0 0 0 6px rgba(60, 135, 6, 0.18);
+  background: rgba(60, 135, 6, 0.06);
+}
+
+.about__qr-hotspot:active .about__qr-ring {
+  box-shadow: 0 0 0 3px rgba(60, 135, 6, 0.3);
+}

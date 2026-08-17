@@ -1,0 +1,14 @@
+.work {
+  position: relative;
+  background: var(--chalk-green);
+}
+
+.work__frame {
+  position: relative;
+}
+
+.work__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

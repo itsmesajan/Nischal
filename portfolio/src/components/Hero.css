@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.hero__frame {
+  will-change: transform;
+  transition: transform 0.15s ease-out;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero__scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(10px, 3vw, 26px);
+  transform: translateX(-50%);
+  width: 26px;
+  height: 42px;
+  border: 2px solid rgba(77, 77, 77, 0.45);
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+.hero__scroll-cue span {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  background: rgba(191, 17, 16, 0.7);
+  border-radius: 2px;
+  transform: translateX(-50%);
+  animation: scrollCue 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollCue {
+  0% {
+    opacity: 1;
+    top: 6px;
+  }
+  70% {
+    opacity: 0;
+    top: 22px;
+  }
+  100% {
+    opacity: 0;
+    top: 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__scroll-cue {
+    display: none;
+  }
+}
