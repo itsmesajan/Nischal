@@ -9,6 +9,9 @@ export default function About() {
           src={aboutImg}
           alt="Hi, I'm Nischal — A graphic designer who loves turning ideas into clean, creative, and eye-catching visuals. I design with purpose, play with ideas, and always aim to make something that stands out."
           className="about__img"
+          width={3006}
+          height={1529}
+          loading="lazy"
         />
         <a
           href="https://instagram.com/designer_nis"

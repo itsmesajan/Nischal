@@ -5,19 +5,19 @@ import "./Work.css";
 const FOLDERS = [
   {
     label: "Social Media Post Design",
-    style: { left: "5%", top: "15%", width: "18.3%", height: "13.9%" },
+    style: { left: "7.3%", top: "28%", width: "39.5%", height: "30.5%" },
   },
   {
     label: "Package Design",
-    style: { left: "28.3%", top: "15%", width: "18.3%", height: "13.9%" },
+    style: { left: "52%", top: "28.5%", width: "39.5%", height: "29.5%" },
   },
   {
     label: "Logo Design",
-    style: { left: "5%", top: "31.6%", width: "18.3%", height: "14.1%" },
+    style: { left: "6%", top: "63.5%", width: "39.5%", height: "30%" },
   },
   {
     label: "Email Design",
-    style: { left: "28.3%", top: "31.6%", width: "18.3%", height: "14.1%" },
+    style: { left: "52.5%", top: "65%", width: "39.5%", height: "28.5%" },
   },
 ];
 
@@ -29,6 +29,9 @@ export default function Work() {
           src={workImg}
           alt="My Work — four folders labelled Social Media Post Design, Package Design, Logo Design, and Email Design, on a chalkboard backdrop"
           className="work__img"
+          width={3006}
+          height={3058}
+          loading="lazy"
         />
         {FOLDERS.map((f) => (
           <FolderHotspot key={f.label} label={f.label} style={f.style} />

@@ -33,6 +33,9 @@ export default function Hero() {
           src={heroImg}
           alt="Nischal's Portfolio — hand-lettered title on a scrapbook desk, with a taped polaroid photo and a portrait of Nischal in a red suit"
           className="hero__img"
+          width={3006}
+          height={1672}
+          fetchPriority="high"
         />
       </div>
       <div className="hero__scroll-cue" aria-hidden="true">

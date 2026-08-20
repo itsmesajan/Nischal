@@ -8,6 +8,9 @@ export default function ThankYou() {
         src={thanksImg}
         alt="Thank you! Illustrated with a small fish and a frog on a scrapbook paper background."
         className="thanks__img"
+        width={3006}
+        height={649}
+        loading="lazy"
       />
       <div className="thanks__bar">
         <a
